@@ -1,18 +1,24 @@
-const Button = ({ variant }: { variant: string }) => {
-  interface Variants {
-    success: string;
-    error: string;
-  }
+import { variants, Variants } from "./constants";
 
-  const colorVariants: Variants = {
-    success: "bg-default hover:default-hover",
-    error: "bg-red-600 hover:bg-red-500",
-  };
-
+const Button = ({
+  variant,
+  disableShadow,
+  color,
+}: {
+  variant: string;
+  disableShadow?: boolean;
+  color?: string;
+}) => {
   return (
-    <div className={`${colorVariants[variant as keyof Variants]} p-4 m-5`}>
-      <h1>Esto es un botón {variant}</h1>
-    </div>
+    <button
+      className={`${
+        variants[variant as keyof Variants]
+      } p-4 m-5 w-20 h-9 flex justify-center items-center rounded-md ${
+        disableShadow && "drop-shadow-none"
+      }`}
+    >
+      {variant}
+    </button>
   );
 };
 
