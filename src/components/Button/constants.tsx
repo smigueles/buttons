@@ -44,8 +44,8 @@ export const getVariant = (
     !disabled && color && getColor(color)
   }`,
   outlined:
-    "bg-white text-[#3D5AFE] border-1 border-[#3D5AFE] hover:bg-[#2962FF1A] focus:border-[#3D5AFE] focus:outline-none focus:bg-[#2962FF1A]",
-  text: `bg-transparent hover:bg-[#2962FF1A] text-[#3D5AFE] hover:border-0 hover:border-transparent focus:bg-[#2962FF1A] focus:outline-none  ${
+    "bg-white text-custom-blue border-1 border-custom-blue hover:bg-[#2962FF1A] focus:border-custom-blue focus:outline-none focus:bg-[#2962FF1A]",
+  text: `bg-transparent hover:bg-[#2962FF1A] text-custom-blue hover:border-0 hover:border-transparent focus:bg-[#2962FF1A] focus:outline-none  ${
     disabled && "hover:bg-transparent text-[#9E9E9E]"
   } `,
 });

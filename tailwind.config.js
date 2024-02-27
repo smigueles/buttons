@@ -17,6 +17,7 @@ export default {
         danger: "#D32F2F",
         "danger-hover": "#9A0007",
         "custom-blue": "#3D5AFE",
+        "disabled-color": "#9E9E9E",
       },
     },
   },

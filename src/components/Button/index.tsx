@@ -31,7 +31,7 @@ const Button = ({
       disabled={disabled}
       className={` flex flex-row justify-evenly items-center rounded-md ${buttonVariant} p-2 m-5 ${buttonSize} ${
         (!!StartIcon || !!EndIcon) && "!w-[112px]"
-      } ${buttonSize} `}
+      }`}
     >
       {!!StartIcon && <StartIcon />}
       <p>{variant || color}</p>
