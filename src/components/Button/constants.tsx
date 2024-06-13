@@ -6,9 +6,9 @@ import DoneIcon from "@mui/icons-material/Done";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 
-export const getIcon = (
-  iconName?: string
-): OverridableComponent<SvgIconTypeMap> | string | undefined =>
+type materialIcon = OverridableComponent<SvgIconTypeMap>;
+
+export const getIcon = (iconName?: string): materialIcon | string | undefined =>
   iconName &&
   {
     faceIcon: FaceIcon,
@@ -46,7 +46,7 @@ export const getVariant = (
   outlined:
     "bg-white text-custom-blue border-1 border-custom-blue hover:bg-[#2962FF1A] focus:border-custom-blue focus:outline-none focus:bg-[#2962FF1A]",
   text: `bg-transparent hover:bg-[#2962FF1A] text-custom-blue hover:border-0 hover:border-transparent focus:bg-[#2962FF1A] focus:outline-none  ${
-    disabled && "hover:bg-transparent text-[#9E9E9E]"
+    disabled && "hover:bg-transparent !text-[#9E9E9E]"
   } `,
 });
 

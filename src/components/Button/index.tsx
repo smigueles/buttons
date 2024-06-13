@@ -29,7 +29,7 @@ const Button = ({
   return (
     <button
       disabled={disabled}
-      className={` flex flex-row justify-evenly items-center rounded-md ${buttonVariant} p-2 m-5 ${buttonSize} ${
+      className={` flex flex-row justify-evenly items-center rounded-md ${buttonVariant} p-2 ${buttonSize} ${
         (!!StartIcon || !!EndIcon) && "!w-[112px]"
       }`}
     >
