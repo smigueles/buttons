@@ -32,8 +32,8 @@ To run this project locally, follow these steps:
 
 1. **Clone the repository**
     ```bash
-    git clone https://github.com/your-username/devchallenges-button-component.git
-    cd devchallenges-button-component
+    git clone git@github.com:smigueles/buttons.git
+    cd buttons
     ```
 
 2. **Install dependencies**
